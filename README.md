@@ -33,5 +33,8 @@ python -m dogbark_privacy check-event path/to/edge_emit.json
 pytest
 ```
 
+## Merge queue
+PR for Vivek after **edge#1 → fusion#1**. Upload remains stubbed/blocked until keys + retention freeze.
+
 ## Status
-Scaffold for Vivek merge. Upload remains stubbed/blocked until keys + retention freeze.
+Scaffold for Vivek merge. 7 pytest green.
