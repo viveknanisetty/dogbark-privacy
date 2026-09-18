@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dogbark-privacy"
+version = "0.1.0"
+description = "Sheru/Dog Bark privacy lane: encrypt-at-rest, local_only gate, retention, egress audit"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = ["cryptography>=42"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0"]
+
+[project.scripts]
+dogbark-privacy = "dogbark_privacy.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["dogbark_privacy*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
